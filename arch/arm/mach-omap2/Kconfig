@@ -342,6 +342,13 @@ config OMAP3_SDRC_AC_TIMING
 	  users who will wish to say yes at this point - almost everyone will
 	  wish to say no.  Selecting yes without understanding what is
 	  going on could result in system crashes;
+	  
+config FORCE_FAST_CHARGE
+	bool "Force AC charge mode at will"
+	default y
+	help
+	  A simple sysfs interface to force adapters that
+	  are detected as USB to charge as AC.	  
 
 endmenu
 
